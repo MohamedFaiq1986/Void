@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lo"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text="انتخابات مجلس النواب العراقي 2030"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/gr"
+        android:layout_width="254dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="عام"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="خاص"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="296dp"
+        android:onClick="onclickbuttonMethod"
+        android:text="موافق"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="396dp"
+        android:layout_marginTop="296dp"
+        android:onClick="goStt"
+        android:text="اعدادت"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <DigitalClock
+        android:id="@+id/simpleDigitalClock"
+        android:layout_width="81dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="308dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
